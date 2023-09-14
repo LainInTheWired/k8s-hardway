@@ -290,8 +290,8 @@ kubectl config use-context default --kubeconfig=worker-01.kubeconfig
 kubectl config set-cluster kubernetes-the-hard-way \
 	--certificate-authority=ca.pem \
 	--embed-certs=true \
-	--server=https://${MASTER}:6443 \ 
-	--kubeconfig=worker-02.kubeconfig
+	--server=https://${MASTER}:6443 \
+    --kubeconfig=worker-02.kubeconfig
 
 
 kubectl config set-credentials system:node:worker-02 \
